@@ -1,11 +1,14 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: The Cherry Picker's Guide
+description: This is a blog for developers to learn best practices for selecting efficient code, with real-world examples and tips.
 theme: just-the-docs
+url: https://dylanmsk.github.io/
 
-url: https://just-the-docs.github.io
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+color_scheme: custom
+
+
+# aux_links:
+#   Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
 plugins:
   - jekyll-default-layout

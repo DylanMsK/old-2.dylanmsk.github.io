@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'nokogiri'
+gem 'rack', '~> 2.2.4'
+gem 'rspec'
+
 gem "jekyll", "~> 4.3" # installed by `gem jekyll`
 # gem "webrick"        # required when using Ruby >= 3 and Jekyll <= 4.2.2
 

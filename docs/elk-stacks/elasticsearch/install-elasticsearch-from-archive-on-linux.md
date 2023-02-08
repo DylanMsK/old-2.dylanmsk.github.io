@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Install Elasticsearch from archive on Linux
+nav_order: 1
 grand_parent: ELK Stacks
 parent: Elasticsearch
 ---
@@ -20,8 +21,8 @@ parent: Elasticsearch
 ## Host Setup
 
 - Ubuntu 20.04.5
-- Docker Engine version 20.10.23
-- Docker Compose version 2.15.1
+- 4GB RAM
+- 4 vCPUs
 
 ## 1. Introduction
 

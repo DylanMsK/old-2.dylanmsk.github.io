@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Install Elasticsearch from archive on Linux
-grand_parent: Stacks
-parent: ELK
+grand_parent: ELK Stacks
+parent: Elasticsearch
 ---
 
 {: .no_toc }
@@ -13,7 +13,9 @@ parent: ELK
   {: .text-delta }
 - TOC
 {:toc}
+---
 </details>
+
 
 ## Host Setup
 
@@ -38,7 +40,7 @@ Elasticsearch는 다음과 같은 다양한 애플리케이션에서 유용하�
 
 요약하자면, Elasticsearch는 검색, 분석, 로그 분석, 비즈니스 인텔리전스, 모니터링 등 다양한 애플리케이션에 널리 사용되는 확장성이 뛰어난 **분산형 검색 및 분석 엔진**입니다.
 
-## 2. Host Server Requirements
+## 2. Server Requirements
 
 ### Hardware Requirements
 
@@ -92,7 +94,7 @@ $ tree es-717 -L 1
 
 다음은 기본적으로 포함되어 있는 폴더들에 대한 간단한 설명입니다:
 
-- **bin**: 서비스를 제어하고 관리하는데 사용되는 여러 실행 스크립트들이 포함되어 있습니다.
+- **./bin**: 서비스를 제어하고 관리하는데 사용되는 여러 실행 스크립트들이 포함되어 있습니다.
     - `elasticsearch`: 서비스를 시작, 중지하거나 상태를 확인할 수 있습니다.
     - `elasticsearch-plugin`: 플러그인을 설치, 조회 및 제거하는 데 사용됩니다.
     - `elasticsearch-keystore`: 기본 사용자의 비밀번호와 같은 민감한 설정에 대한 키 저장소를 관리하는 데 사용됩니다.
@@ -100,7 +102,7 @@ $ tree es-717 -L 1
     - `elasticsearch-node`: 노드 이름을 변경하거나 샤드 할당을 비활성화하는 등 노드 수준 작업을 수행하는 데 사용됩니다.
     - `elasticsearch-shard`: 샤드 재배치 또는 분할과 같은 샤드 수준 작업을 수행하는 데 사용됩니다.
     - `elasticsearch-cluster`: 클러스터의 상태를 관리하거나 복제본 수를 변경하는 등 클러스터 수준 작업을 수행하는 데 사용됩니다.
-- **config**: 서비스의 동작을 구성하는 데 사용되는 여러 구성 파일이 포함되어 있습니다.
+- **./config**: 서비스의 동작을 구성하는 데 사용되는 여러 구성 파일이 포함되어 있습니다.
     - `elasticsearch.yml`: Elasticsearch의 기본 구성 파일입니다. 노드 이름, 네트워크 설정, 데이터 색인, 검색, 저장과 관련된 기타 설정 등 Elasticsearch 클러스터와 관련된
     설정이 포함되어 있습니다.
     - `jvm.options`: JVM에 대한 구성 옵션이 포함되어 있습니다. 메모리 할당, 가비지 수집 및 기타 JVM 관련 설정과 관련된 옵션이 포함되어 있습니다.
@@ -212,4 +214,10 @@ TLS 인증서와 같은 보안 및 인증과 관련된 설정도 구성할 수 �
 
 실제 운영환경에서는 클러스터링, 노드 보안, Realm 등 수 많은 설정들이 적용되어야 합니다.  
 
-다음 포스팅 부터는 Elasticsearch를 운영 환경에 적용하기 위한 설정들을 하나 하나 정리하도록 하겠습니다.
+다음 포스팅 부터는 Elasticsearch를 운영 환경에 적용하기 위한 설정들을 하나 하나 정리하도록 하겠습니다.  
+
+---
+
+## References
+
+- [Set up Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html)

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install Elasticsearch from archive on Linux
+title: Install Elasticsearch from archive on Ubuntu
 nav_order: 1
 grand_parent: ELK Stacks
 parent: Elasticsearch

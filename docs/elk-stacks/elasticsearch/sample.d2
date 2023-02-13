@@ -1,0 +1,42 @@
+Cluster: {
+  server1: 192.168.1.58
+  server2: 192.168.1.59
+  server3: 192.168.1.60
+  Router: "" {
+    shape: image
+    icon: https://icons.terrastruct.com/tech%2Frouter.svg
+  }
+
+  server1.node: Master Node
+  server1.node.shape: cylinder
+  server1.node.style.fill: "#698269"
+  server2.node: Master Node
+  server2.node.shape: cylinder
+  server2.node.style.fill: "#698269"
+  server3.node: Master Node
+  server3.node.shape: cylinder
+  server3.node.style.fill: "#698269"
+}
+
+User: {
+  shape: person
+  style.fill: "#F1DBBF"
+}
+
+Cluster.Server1 <-> User: http: 9200
+
+Cluster.Server1 <-> Cluster.Router: http:9200\ntcp:9300
+Cluster.Server2 <-> Cluster.Router: http:9200\ntcp:9300
+Cluster.Server3 <-> Cluster.Router: http:9200\ntcp:930
+# direction: right
+
+# somthing: 무언가 {
+#   minsu: "" {
+#     shape: image
+#     icon: https://icons.terrastruct.com/essentials%2F365-user.svg
+#   }
+#   hey: 헤이 {
+#     shape: cloud
+#   }
+#   minsu <-> hey
+# }
